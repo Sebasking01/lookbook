@@ -21,6 +21,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'instagram'
 gem 'omniauth-instagram'
 gem 'omniauth-google-oauth2'
+gem 'figaro'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -54,6 +55,7 @@ group :test, :development do
   gem 'pry'
   gem 'guard-rspec', require: false
   gem 'thin'
+  gem 'pry-rails'
 end
 
 group :production do
