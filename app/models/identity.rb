@@ -5,7 +5,7 @@ class Identity < ActiveRecord::Base
     Identity.create({
       provider: auth[:provider],
       uid: auth[:uid],
-      token: auth[:some_hash],
+      token: auth[:token],
       first_name: auth[:info][:first_name],
       last_name: auth[:info][:last_name],
       email: auth[:info][:email]
