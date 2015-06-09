@@ -1,9 +1,9 @@
 <%= form_for @appointment do |f| %>
-  <%= f.label :first_name %>:
-  <%= f.text_field :first_name %><br />
+  <%= f.label :start_time, alt: 'Begin time' %>:
+  <%= f.datetime_field :start_time %><br />
 
-  <%= f.label :last_name %>:
-  <%= f.text_field :last_name %><br />
+  <%= f.label :end_time, alt: 'Ending time' %>:
+  <%= f.datetime_field :end_time %><br />
 
   <%= f.submit %>
 <% end %>

@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
   def create
-    
+
   end
 
   def edit
@@ -10,9 +10,10 @@ class AppointmentsController < ApplicationController
   end
 
   def new
-    @appointment = Appointment.new
+    @user = User.find(session[:user_id])
+    @appointment = @user.appointments.build
   end
 
-  def delete
+  def destroy
   end
 end
