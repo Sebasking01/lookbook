@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   resources 'users', only: ['edit', 'show']
 
-  resources 'appointments', only: ['create', 'edit', 'destroy', 'show']
+  resources 'users' do
+    resources 'appointments', only: ['new', 'edit', 'destroy', 'show', 'create']
+  end
 end

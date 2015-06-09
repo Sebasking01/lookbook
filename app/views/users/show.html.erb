@@ -1,8 +1,12 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
-<h1>Welcome <%= @user.name %></h1>
+<h1>Welcome, <%= @user.name %>!</h1>
+<%= image_tag @user.picture_url, alt: "User Picture" %><br/>
 <% unless @current_user.identity %>
-  <%= link_to "Google Sign In", '/auth/google_oauth2' %>
+  <%= link_to "Link your Google account to start making appointments!", '/auth/google_oauth2' %><br/>
+<%end%>
+<% if @current_user.identity %>
+  <%= link_to "Create an appointment!", new_user_appointment_path(@user)%><br/>
 <%end%>
 <%= link_to "Sign Out", '/logout' %>
 <%= notice %>
