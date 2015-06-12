@@ -1,9 +1,9 @@
 <%= form_for @appointment, url: user_appointments_path do |f| %>
   <%= f.label :start_time, alt: 'Begin time' %>:
-  <%= f.datetime_field :start_time %><br />
+  <%= f.date_field :start_time %><br />
 
   <%= f.label :end_time, alt: 'Ending time' %>:
-  <%= f.datetime_field :end_time %><br />
+  <%= f.date_field :end_time %><br />
 
   <%= f.submit %>
 <% end %>
