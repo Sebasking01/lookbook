@@ -1,6 +1,6 @@
 class AppointmentsController < ApplicationController
   def create
-
+    binding.pry
   end
 
   def edit
