@@ -23,6 +23,8 @@ gem 'omniauth-instagram'
 gem 'google-api-client', require: 'google/api_client'
 gem 'omniauth-google-oauth2'
 gem 'figaro'
+gem 'will_paginate'
+gem 'youtube_it'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

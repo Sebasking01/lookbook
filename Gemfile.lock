@@ -79,6 +79,7 @@ GEM
     docile (1.1.5)
     erubis (2.7.0)
     eventmachine (1.0.7)
+    excon (0.45.3)
     execjs (2.5.2)
     extlib (0.9.16)
     factory_girl (4.5.0)
@@ -175,6 +176,7 @@ GEM
     notiffany (0.0.6)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    oauth (0.4.7)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -282,6 +284,7 @@ GEM
       faraday (~> 0.9)
       jwt (~> 1.0)
       multi_json (~> 1.10)
+    simple_oauth (0.3.1)
     simplecov (0.10.0)
       docile (~> 1.1.0)
       json (~> 1.8)
@@ -316,8 +319,18 @@ GEM
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
     websocket (1.2.2)
+    will_paginate (3.0.7)
     xpath (2.0.0)
       nokogiri (~> 1.3)
+    youtube_it (2.4.2)
+      builder
+      excon
+      faraday (>= 0.8, < 0.10)
+      json (~> 1.8)
+      nokogiri (~> 1.6.0)
+      oauth (~> 0.4.4)
+      oauth2 (~> 1.0.0)
+      simple_oauth (>= 0.1.5)
 
 PLATFORMS
   ruby
@@ -355,3 +368,5 @@ DEPENDENCIES
   thin
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+  will_paginate
+  youtube_it
