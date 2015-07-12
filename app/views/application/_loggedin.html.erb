@@ -3,6 +3,10 @@
     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/styles">Styles</a>
     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/posts">Blog</a>
     <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/videos">Videos</a>
-    <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/logout">Sign Out</a>
+    <%if @current_user %>
+      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/logout">Sign Out</a>
+    <%else%>
+      <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/auth/instagram">Sign In</a>
+    <%end%>
   </nav>
 </div>

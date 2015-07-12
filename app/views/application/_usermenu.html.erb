@@ -4,7 +4,7 @@
       <%= @user.name %>
   </span>
   <nav class="mdl-navigation">
-    <a class="mdl-navigation__link" href="">Make Appointments</a>
+    <%= link_to "Make Appointment", new_user_appointment_path(@user), class:"mdl-navigation__link" %>
     <a class="mdl-navigation__link" href="">Past Appointments</a>
     <a class="mdl-navigation__link" href="">My Styles</a>
     <a class="mdl-navigation__link" href="">TV</a>

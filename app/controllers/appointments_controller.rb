@@ -10,7 +10,7 @@ class AppointmentsController < ApplicationController
   end
 
   def new
-    @user = User.find(session[:user_id])
+    @user = current_user
     @appointment = @user.appointments.build
   end
 
