@@ -5,23 +5,34 @@ class GoogleCalendar
 
   end
 
-  def create_event
+  def create_appointment(email, starttime, endtime, token)
       @event = {
-      'summary' => 'New Event Title',
-      'description' => 'The description',
-      'location' => 'Location',
-      'start' => { 'dateTime' => Chronic.parse('tomorrow 4 pm') },
-      'end' => { 'dateTime' => Chronic.parse('tomorrow 5pm') },
-      'attendees' => [ { "email" => 'bob@example.com' },
+      'summary' => 'Hair Appointment',
+      'description' => 'Hair appointment with Alisha',
+      'location' => '395 Linden Blvd',
+      'start' => { 'dateTime' => start) },
+      'end' => { 'dateTime' => endtime },
+      'attendees' => [ { "email" => email },
       { "email" =>'sally@example.com' } ] }
+      # change the second email to alisha email
+      # figure out how to authenticate on every request
 
     client = Google::APIClient.new
-    client.authorization.access_token = current_user.token
+    client.authorization.access_token = token
     service = client.discovered_api('calendar', 'v3')
 
     @set_event = client.execute(:api_method => service.events.insert,
-                            :parameters => {'calendarId' => current_user.email, 'sendNotifications' => true},
+                            :parameters => {'calendarId' => email, 'sendNotifications' => true},
                             :body => JSON.dump(@event),
                             :headers => {'Content-Type' => 'application/json'})
+  end
+
+  def edit_appointment(email, token)
+
+  end
+
+
+  def cancel_appointment(email, token)
+
   end
 end
