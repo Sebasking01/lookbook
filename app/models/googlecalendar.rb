@@ -2,7 +2,6 @@ class GoogleCalendar
   attr_reader :base_url, :email
   def initialize
     @base_url = "https://www.googleapis.com/calendar/v3"
-
   end
 
   def create_appointment(email, starttime, endtime, token)
@@ -28,7 +27,6 @@ class GoogleCalendar
   end
 
   def edit_appointment(email, token)
-
   end
 
 
