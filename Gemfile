@@ -58,7 +58,7 @@ group :test, :development do
   gem 'sqlite3'
   gem 'pry'
   gem 'guard-rspec', require: false
-  gem 'thin'
+  gem 'puma'
   gem 'pry-rails'
 end
 
