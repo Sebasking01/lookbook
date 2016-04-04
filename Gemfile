@@ -66,6 +66,7 @@ group :production do
   gem 'pg'
   gem 'google-analytics-rails'
   gem 'rails_12factor'
+  gem 'puma'
 end
 
 gem 'bootstrap-sass', '~> 3.1.1'
