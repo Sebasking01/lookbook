@@ -31,6 +31,7 @@ gem 'faye-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'thin'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -60,7 +61,6 @@ group :test, :development do
   gem 'pry'
   gem 'guard-rspec', require: false
   gem 'pry-rails'
-  gem 'thin'
 end
 
 group :production do
