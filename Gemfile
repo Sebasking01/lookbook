@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'instagram'
 gem 'omniauth-instagram'
-gem 'google-api-client', require: 'google/api_client'
+
 gem 'omniauth-google-oauth2'
 gem 'figaro'
 gem 'will_paginate'
@@ -34,6 +34,7 @@ gem 'faye-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,15 +59,14 @@ group :test, :development do
   gem 'sqlite3'
   gem 'pry'
   gem 'guard-rspec', require: false
-  gem 'puma'
   gem 'pry-rails'
+  gem 'thin'
 end
 
 group :production do
   gem 'pg'
   gem 'google-analytics-rails'
   gem 'rails_12factor'
-  gem 'puma'
 end
 
 gem 'bootstrap-sass', '~> 3.1.1'
