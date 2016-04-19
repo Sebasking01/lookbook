@@ -21,7 +21,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'instagram'
 gem 'omniauth-instagram'
 
-gem 'omniauth-google-oauth2'
 gem 'figaro'
 gem 'will_paginate'
 gem 'youtube_it'
