@@ -8,8 +8,37 @@
   <%= analytics_init if Rails.env.production? %>
 </head>
 <body>
+  <header class="primary-header container group">
+    <section class="container">
+        <h1 class="logo group">
+            <%= link_to "LOGO", root_path %>
+        </h1>
+    </section>
+
+    <nav class="nav primary-nav">
+        <ul>
+            <li><%= link_to "Home", root_path %></li><!--
+            --><li><%= link_to "About me" %></li><!--
+            --><li><%= link_to "Blog" %></li><!--
+            --><li><%= link_to "Videos" %></li>
+        </ul>
+    </nav>
+  </header>
 
 <%= yield %>
+
+<footer class="primary-footer container group">
+
+  <small>&copy; Alisha Richards</small>
+   <nav class="nav">
+     <ul>
+         <li><%= link_to "Home", root_path %></li><!--
+         --><li><%= link_to "About me" %></li><!--
+         --><li><%= link_to "Blog" %></li><!--
+         --><li><%= link_to "Videos" %></li>
+     </ul>
+  </nav>
+</footer>
 
 </body>
 </html>
