@@ -248,9 +248,12 @@ padding: 22px 80px 66px 80px;
 */
 
 body {
-    background: #38f040;
-    color: #000;
-    font: ;
+  background: #d70ce8;
+  background: -webkit-linear-gradient(to right, #d70ce8, #4c15cf);
+  background: -moz-linear-gradient(to right, #d70ce8, #4c15cf);
+  background: linear-gradient(to right, #d70ce8, #4c15cf);
+  color: #000;
+  font: ;
 }
 
 h1, h2, h3, h4 {
